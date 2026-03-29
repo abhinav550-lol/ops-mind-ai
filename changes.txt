@@ -6,36 +6,36 @@ authors=(
 )
 
 messages=(
-"init RAG pipeline for SOP ingestion"
-"added chunking for SOP documents"
-"integrated FAISS vector database"
-"implemented embedding generation"
-"fixed chunk overlap issue"
-"optimized retrieval latency"
-"added query caching layer"
-"improved prompt engineering"
-"handled empty query edge case"
-"added support for PDF parsing"
-"refactored backend structure"
-"setup FastAPI endpoints"
-"added logging middleware"
-"improved error handling"
-"optimized token usage"
-"added semantic ranking"
-"fixed hallucination issue"
-"enhanced response formatting"
-"added chat history tracking"
-"improved retrieval accuracy"
-"added docker support"
-"fixed deployment bug"
-"optimized embedding storage"
-"improved vector search speed"
-"added retry logic"
-"refactored retriever module"
-"updated README"
-"minor UI fixes"
-"improved API performance"
-"final cleanup before demo"
+"initial setup for MERN stack + basic project structure"
+"wired up Express server and MongoDB Atlas connection"
+"started working on SOP ingestion flow"
+"added basic document upload + storage"
+"experimented with chunking strategy for large SOPs"
+"integrated MongoDB Atlas Search for semantic retrieval"
+"implemented embedding pipeline for documents"
+"first working version of RAG query flow"
+"noticed poor results, tweaking chunk size and overlap"
+"improved retrieval quality using better search index config"
+"added caching for frequent queries to reduce latency"
+"cleaned up backend routes and controllers"
+"setup basic React UI for querying SOPs"
+"connected frontend with backend API"
+"handled edge cases like empty or vague queries"
+"improved prompt structure for better LLM responses"
+"fixed weird hallucination issue in responses"
+"added chat history tracking for better UX"
+"refactored retriever logic for cleaner pipeline"
+"optimized MongoDB Atlas queries for speed"
+"reduced response time with minor performance tweaks"
+"added support for PDF parsing and ingestion"
+"improved error handling across API"
+"added loading states and UI feedback in frontend"
+"dockerized backend for easier deployment"
+"fixed deployment issue with environment variables"
+"improved embedding storage structure"
+"did some UI polishing (still basic but better)"
+"final tuning of RAG responses and formatting"
+"cleanup + preparing project for demo"
 )
 
 for i in {0..29}
@@ -57,32 +57,3 @@ do
   GIT_AUTHOR_EMAIL="$email" \
   git commit -m "$msg"
 donechange 0
-change 1
-change 2
-change 3
-change 4
-change 5
-change 6
-change 7
-change 8
-change 9
-change 10
-change 11
-change 12
-change 13
-change 14
-change 15
-change 16
-change 17
-change 18
-change 19
-change 20
-change 21
-change 22
-change 23
-change 24
-change 25
-change 26
-change 27
-change 28
-change 29
