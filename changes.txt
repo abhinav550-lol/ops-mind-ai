@@ -57,3 +57,4 @@ do
   GIT_AUTHOR_EMAIL="$email" \
   git commit -m "$msg"
 donechange 0
+change 1
