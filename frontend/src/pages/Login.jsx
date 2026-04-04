@@ -93,7 +93,7 @@ export default function Login() {
           {/* Mobile logo */}
           <div className="flex items-center gap-2 mb-8 lg:hidden">
             <div className="w-8 h-8 bg-ink rounded-lg flex items-center justify-center">
-              <span className="text-white text-sm font-display font-bold">OM</span>
+              <span className="text-white text-sm font-display font-bold font-sans">O</span>
             </div>
             <span className="text-ink text-lg font-display font-semibold">OpsMindAI</span>
           </div>

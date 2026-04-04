@@ -115,7 +115,7 @@ export default function CompanyDetail() {
         {/* RAG panel */}
         <div className="bg-white rounded-xl border border-fog shadow-card p-6 space-y-5">
           <div>
-            <h2 className="text-base font-display font-semibold text-ink">AI SOP Q&A</h2>
+            <h2 className="text-base font-display font-semibold text-ink">AI SOP Query</h2>
             <p className="text-xs text-muted mt-0.5">
               {ragFile
                 ? `Asking about: ${ragFile.name}`
