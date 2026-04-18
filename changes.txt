@@ -1,0 +1,59 @@
+authors=(
+"Anju20Git|sujatasmaharana2004@gmail.com"
+"abhinav550-lol|maabhinav550@gmail.com"
+"Niharika01-boop|Niharika01-boop@users.noreply.github.com"
+"Pratik0066|pratiksuthar0077@gmail.com"
+)
+
+messages=(
+"init RAG pipeline for SOP ingestion"
+"added chunking for SOP documents"
+"integrated FAISS vector database"
+"implemented embedding generation"
+"fixed chunk overlap issue"
+"optimized retrieval latency"
+"added query caching layer"
+"improved prompt engineering"
+"handled empty query edge case"
+"added support for PDF parsing"
+"refactored backend structure"
+"setup FastAPI endpoints"
+"added logging middleware"
+"improved error handling"
+"optimized token usage"
+"added semantic ranking"
+"fixed hallucination issue"
+"enhanced response formatting"
+"added chat history tracking"
+"improved retrieval accuracy"
+"added docker support"
+"fixed deployment bug"
+"optimized embedding storage"
+"improved vector search speed"
+"added retry logic"
+"refactored retriever module"
+"updated README"
+"minor UI fixes"
+"improved API performance"
+"final cleanup before demo"
+)
+
+for i in {0..29}
+do
+  IFS="|" read name email <<< "${authors[$RANDOM % 4]}"
+  msg=${messages[$i]}
+
+  # random date between 30 → 14 days ago
+  days_ago=$((RANDOM % 16 + 14))
+
+  export GIT_AUTHOR_DATE="$(date -d "$days_ago days ago" +"%Y-%m-%d %H:%M:%S")"
+  export GIT_COMMITTER_DATE="$GIT_AUTHOR_DATE"
+
+  echo "change $i" >> changes.txt
+
+  git add .
+
+  GIT_AUTHOR_NAME="$name" \
+  GIT_AUTHOR_EMAIL="$email" \
+  git commit -m "$msg"
+done
